@@ -27,7 +27,7 @@ namespace XamarinReference.Droid
 
         private void SetupIoC()
         {
-            Setup.Initialize();
+			Setup.Initialize(this.ApplicationContext);
         }
     }
 }

@@ -25,7 +25,7 @@ namespace XamarinReference.Droid.Services
             set { _applicationContext = value; }
         }
         
-        public StringLookup(Context applicationContext)
+		public StringLookupService(Context applicationContext)
         {
             _applicationContext = applicationContext;
         }
@@ -36,7 +36,7 @@ namespace XamarinReference.Droid.Services
             {
                 var packageName = _applicationContext.PackageName;
                 int resourceId = _applicationContext.Resources.GetIdentifier(value, "string", packageName);
-                return _applicationContext.GetString(resourceId);
+				return resourceId == 0 ? string.Empty : _applicationContext.GetString(resourceId);
             }
             return string.Empty;
         }

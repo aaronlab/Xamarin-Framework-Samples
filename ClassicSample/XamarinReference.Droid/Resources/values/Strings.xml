@@ -15,13 +15,20 @@
     <string name="Confirm">Confirm</string>
     <string name="Delete">Delete</string>
     <string name="DeleteFileMessage">Are you sure you would like to delete this file?</string>
+    <string name="FontsLoaded">Fonts Loaded</string>
+    <string name="Geolocation">Geolocation</string>
     <string name="iTunes">iTunes</string>
     <string name="LogFileDelete">Delete Log File</string>
     <string name="LogFileShare">Share Log File</string>
     <string name="LogFileView">View Log File</string>
+    <string name="NetworkConnectivityTitle">Network Connectivity</string>
+    <string name="PdfStitching">PDF Stitching</string>
     <string name="PercentPrep">In Prep</string>
     <string name="PercentWork">Work</string>
     <string name="PercentDelivery">Delivery</string>
+    <string name="Ping">Ping</string>
+    <string name="StickyHeaderTitle">Sticky Header</string>
+    <string name="TabNavigationTitle">Tab Navigation</string>
     <string name="TaskInProgress">In Progress</string>
     <string name="TaskInReview">In Review</string>
     <string name="TaskForReview">My Tasks</string>
@@ -33,4 +40,6 @@
     <string name="TopMovies">Movie Sales</string>
     <string name="TopMovieRentals">Movie Rentals</string>
     <string name="TopMusicVideos">Music Videos</string>
+    <string name="DrawerOpenDescription">Open navigation drawer</string>
+    <string name="DrawerCloseDescription">Close navigation drawer</string>
 </resources>

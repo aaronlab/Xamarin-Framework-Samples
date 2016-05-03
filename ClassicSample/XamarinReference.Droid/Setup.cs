@@ -19,12 +19,12 @@ namespace XamarinReference.Droid
 {
     public static class Setup
     {
-        public static void Initialize()
+		public static void Initialize(Context applicationContext)
         {
             MvxSimpleIoCContainer.Initialize();
 
-            Mvx.LazyConstructAndRegisterSingleton<INavigationMenuService<Activity>, NavigationMenuService>();
-            Mvx.RegisterSingleton(typeof(IStringLookup), new StringLookup(this.ApplicationContext));
+            Mvx.LazyConstructAndRegisterSingleton<INavigationMenuService<Fragment>, NavigationMenuService>();
+            Mvx.RegisterSingleton(typeof(IStringLookupService), new StringLookupService(applicationContext));
         }  
     }
 }
