@@ -25,6 +25,9 @@ namespace XamarinReference.Droid
 
             Mvx.LazyConstructAndRegisterSingleton<INavigationMenuService<Fragment>, NavigationMenuService>();
             Mvx.RegisterSingleton(typeof(IStringLookupService), new StringLookupService(applicationContext));
+			Mvx.RegisterSingleton(typeof(IVersionInfo), new VersionInfoService(applicationContext));
+			Mvx.LazyConstructAndRegisterSingleton<ILoggingService, FileLoggingService>();
+			Mvx.LazyConstructAndRegisterSingleton<IFileHelper, FileHelper>();
         }  
     }
 }

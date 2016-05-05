@@ -14,10 +14,12 @@ using Android.Support.V7.App;
 using Android.Support.Design.Widget;
 using Android.Content;
 using Cirrious.CrossCore;
+using XamarinReference.Lib.Interface;
+using XamarinReference.Droid.Fragments;
 
 namespace XamarinReference.Droid
 {
-	[Activity(Label = "Mobile Sample", MainLauncher = true)]
+	[Activity(Label = "Mobile Sample", MainLauncher = true, HardwareAccelerated = true)]
 	public class MainActivity : Activity
     {
 		DrawerLayout drawerLayout;
@@ -43,8 +45,10 @@ namespace XamarinReference.Droid
 			menuAdapter = new MenuAdapter (this);
 			drawerListView.Adapter = menuAdapter;
 			drawerListView.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) => OnMenuItemClick(e.Position);
-			drawerListView.SetItemChecked(0, true);	// Highlight the first item at startup
-			OnMenuItemClick(0);                     // Load Fragment 0 at startup
+			var aboutFrag = menuAdapter.MenuItems.FirstOrDefault(x => x.Manager.GetType() == typeof(AboutFragment));
+			var aboutPos = menuAdapter.MenuItems.IndexOf (aboutFrag);
+			drawerListView.SetItemChecked(aboutPos, true);	// Highlight the About Fragment at startup
+			OnMenuItemClick(aboutPos);                     // Load About Fragment at startup
         }
 
 		protected override void OnPostCreate(Bundle savedInstanceState)

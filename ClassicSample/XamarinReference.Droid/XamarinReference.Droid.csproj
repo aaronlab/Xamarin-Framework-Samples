@@ -86,6 +86,9 @@
     <Reference Include="Xamarin.Android.Support.Design">
       <HintPath>..\packages\Xamarin.Android.Support.Design.23.3.0\lib\MonoAndroid43\Xamarin.Android.Support.Design.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.CardView">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.CardView.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.CardView.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\Base\BaseActivity.cs" />
@@ -112,6 +115,11 @@
     <Compile Include="Fragments\StickyHeaderFragment.cs" />
     <Compile Include="Fragments\PingFragment.cs" />
     <Compile Include="Fragments\PdfStitchingFragment.cs" />
+    <Compile Include="Services\VersionInfoService.cs" />
+    <Compile Include="Activities\DeveloperOptionsActivity.cs" />
+    <Compile Include="Fragments\DeveloperOptionsFragment.cs" />
+    <Compile Include="Services\FileLoggingService.cs" />
+    <Compile Include="Helper\FileHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\fonts\Roboto-Black.ttf" />
@@ -153,6 +161,9 @@
     <AndroidResource Include="Resources\layout\TabNavFragmentLayout.axml" />
     <AndroidResource Include="Resources\layout\ThemeColorFragmentLayout.axml" />
     <AndroidResource Include="Resources\layout\ThemeFontFragmentLayout.axml" />
+    <AndroidResource Include="Resources\values\Values.xml" />
+    <AndroidResource Include="Resources\layout\ActivityFragmentLayout.axml" />
+    <AndroidResource Include="Resources\layout\DeveloperOptionsFragmentLayout.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Icon.png" />
@@ -173,6 +184,7 @@
     <Folder Include="Adapters\" />
     <Folder Include="Fragments\" />
     <Folder Include="Fragments\Base\" />
+    <Folder Include="Helper\" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\Camera.png" />

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <!-- ////////// -->
+  <!-- Dimensions -->
+  <!-- Global -->
+  <dimen name="padding_moar">25dp</dimen>
+  <dimen name="padding_large">15dp</dimen>
+  <dimen name="padding_simple">10dp</dimen>
+  <dimen name="padding_simple_half">5dp</dimen>
+  <dimen name="padding_simple_negative">-10dp</dimen>
+  <dimen name="padding_simple_half_negative">-5dp</dimen>
+
+  <!-- Navigation Drawer -->
+  <dimen name="drawer_padding">15dp</dimen>
+
+  <!-- Text Sizes -->
+  <dimen name="header_text">15dp</dimen>
+  <dimen name="info_text">10dp</dimen>
+</resources>

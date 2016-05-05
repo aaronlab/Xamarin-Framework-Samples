@@ -1,12 +1,14 @@
 ﻿<Properties StartupItem="XamarinReference.Droid/XamarinReference.Droid.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (Marshmallow)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinReference.Droid/MainActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinReference.Droid/Adapters/MenuAdapter.cs">
     <Files>
-      <File FileName="XamarinReference.Lib/XamarinReference.Lib.csproj" Line="1" Column="1" />
-      <File FileName="XamarinReference.iOS/Controller/HomeViewController.cs" Line="45" Column="32" />
-      <File FileName="XamarinReference.Droid/Activities/AboutActivity.cs" Line="18" Column="31" />
-      <File FileName="XamarinReference.Droid/MainActivity.cs" Line="12" Column="30" />
-      <File FileName="XamarinReference.Droid/Resources/values/Strings.xml" Line="36" Column="12" />
+      <File FileName="XamarinReference.iOS/Controller/HomeViewController.cs" Line="1" Column="1" />
+      <File FileName="XamarinReference.Droid/MainActivity.cs" Line="22" Column="99" />
+      <File FileName="XamarinReference.Droid/Adapters/MenuAdapter.cs" Line="39" Column="55" />
+      <File FileName="XamarinReference.iOS/Controller/AboutController.cs" Line="120" Column="37" />
+      <File FileName="XamarinReference.Droid/Fragments/AboutFragment.cs" Line="35" Column="1" />
+      <File FileName="XamarinReference.iOS/Controller/Base/BaseTableViewController.cs" Line="16" Column="9" />
+      <File FileName="XamarinReference.Droid/Setup.cs" Line="28" Column="92" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
