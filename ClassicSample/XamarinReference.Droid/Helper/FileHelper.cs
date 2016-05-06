@@ -67,7 +67,7 @@ namespace XamarinReference.Droid
 			return File.Exists(filePath);
 		}
 
-		public string GetLocalStoragePath { get { return Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments); }
+		public string GetLocalStoragePath { get { return Android.OS.Environment.ExternalStorageDirectory.AbsolutePath; }
 		}
 	}
 }

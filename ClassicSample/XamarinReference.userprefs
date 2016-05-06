@@ -1,14 +1,17 @@
 ﻿<Properties StartupItem="XamarinReference.Droid/XamarinReference.Droid.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (Marshmallow)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinReference.Droid/Adapters/MenuAdapter.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.8XV5T15A20007377" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinReference.Droid/Fragments/DeveloperOptionsFragment.cs">
     <Files>
       <File FileName="XamarinReference.iOS/Controller/HomeViewController.cs" Line="1" Column="1" />
-      <File FileName="XamarinReference.Droid/MainActivity.cs" Line="22" Column="99" />
-      <File FileName="XamarinReference.Droid/Adapters/MenuAdapter.cs" Line="39" Column="55" />
+      <File FileName="XamarinReference.Droid/MainActivity.cs" Line="22" Column="84" />
+      <File FileName="XamarinReference.Droid/Adapters/MenuAdapter.cs" Line="38" Column="1" />
       <File FileName="XamarinReference.iOS/Controller/AboutController.cs" Line="120" Column="37" />
-      <File FileName="XamarinReference.Droid/Fragments/AboutFragment.cs" Line="35" Column="1" />
-      <File FileName="XamarinReference.iOS/Controller/Base/BaseTableViewController.cs" Line="16" Column="9" />
-      <File FileName="XamarinReference.Droid/Setup.cs" Line="28" Column="92" />
+      <File FileName="XamarinReference.Droid/Fragments/AboutFragment.cs" Line="49" Column="6" />
+      <File FileName="XamarinReference.Droid/Services/FileLoggingService.cs" Line="22" Column="69" />
+      <File FileName="XamarinReference.iOS/Services/FileLoggingService.cs" Line="18" Column="3" />
+      <File FileName="XamarinReference.Droid/Helper/FileHelper.cs" Line="42" Column="16" />
+      <File FileName="XamarinReference.Droid/Fragments/DeveloperOptionsFragment.cs" Line="71" Column="33" />
+      <File FileName="XamarinReference.iOS/Controller/DeveloperOptionsController.cs" Line="136" Column="69" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

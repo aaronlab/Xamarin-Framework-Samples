@@ -14,6 +14,7 @@ using Cirrious.CrossCore;
 using Cirrious.CrossCore.IoC;
 using XamarinReference.Lib.Interface;
 using XamarinReference.Droid.Services;
+using XamarinReference.Lib.Services;
 
 namespace XamarinReference.Droid
 {
@@ -28,6 +29,7 @@ namespace XamarinReference.Droid
 			Mvx.RegisterSingleton(typeof(IVersionInfo), new VersionInfoService(applicationContext));
 			Mvx.LazyConstructAndRegisterSingleton<ILoggingService, FileLoggingService>();
 			Mvx.LazyConstructAndRegisterSingleton<IFileHelper, FileHelper>();
+			Mvx.LazyConstructAndRegisterSingleton<IJobsService, JobsService>();
         }  
     }
 }

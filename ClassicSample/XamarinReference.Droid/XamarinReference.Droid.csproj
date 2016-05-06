@@ -120,6 +120,7 @@
     <Compile Include="Fragments\DeveloperOptionsFragment.cs" />
     <Compile Include="Services\FileLoggingService.cs" />
     <Compile Include="Helper\FileHelper.cs" />
+    <Compile Include="Adapters\BusinessCardAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\fonts\Roboto-Black.ttf" />
@@ -164,6 +165,8 @@
     <AndroidResource Include="Resources\values\Values.xml" />
     <AndroidResource Include="Resources\layout\ActivityFragmentLayout.axml" />
     <AndroidResource Include="Resources\layout\DeveloperOptionsFragmentLayout.axml" />
+    <AndroidResource Include="Resources\layout\BusinessCardItem.axml" />
+    <AndroidResource Include="Resources\drawable\circle.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Icon.png" />

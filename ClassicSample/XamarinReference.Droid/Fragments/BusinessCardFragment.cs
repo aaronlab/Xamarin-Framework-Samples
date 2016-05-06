@@ -11,6 +11,9 @@ using Android.Views;
 using Android.Widget;
 
 using XamarinReference.Droid.Fragments.Base;
+using XamarinReference.Lib.Interface;
+using Cirrious.CrossCore;
+using XamarinReference.Lib.Model;
 
 namespace XamarinReference.Droid.Fragments
 {
@@ -24,6 +27,8 @@ namespace XamarinReference.Droid.Fragments
 		public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 		{
 			var view = inflater.Inflate(Resource.Layout.BusinessCardFragmentLayout, container, false);
+			var listView = view.FindViewById<ListView>(Resource.Id.listViewBusinessCards);
+			listView.Adapter = new BusinessCardAdapter (this.Activity);
 			return view;
 		}
 	}

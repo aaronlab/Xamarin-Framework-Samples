@@ -16,18 +16,21 @@ using Android.Content;
 using Cirrious.CrossCore;
 using XamarinReference.Lib.Interface;
 using XamarinReference.Droid.Fragments;
+using XamarinReference.Droid.Activities.Base;
 
 namespace XamarinReference.Droid
 {
 	[Activity(Label = "Mobile Sample", MainLauncher = true, HardwareAccelerated = true)]
-	public class MainActivity : Activity
+	public class MainActivity : BaseActivity
     {
 		DrawerLayout drawerLayout;
 		ActionBarDrawerToggle drawerToggle;
 		ListView drawerListView;
 		MenuAdapter menuAdapter;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
+			_logging.WriteLine(Lib.Logging.MessageType.Information, "Starting application in MainActivity OnCreate method");
             base.OnCreate(savedInstanceState);
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
