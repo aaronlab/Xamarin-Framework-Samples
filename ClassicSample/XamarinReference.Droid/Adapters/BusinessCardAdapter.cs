@@ -6,6 +6,10 @@ using System.Collections.Generic;
 using Cirrious.CrossCore;
 using XamarinReference.Lib.Interface;
 using Android.Views;
+using Android.Graphics.Drawables.Shapes;
+using Android.Graphics.Drawables;
+using Android.Graphics;
+using RadialProgress;
 
 namespace XamarinReference.Droid
 {
@@ -17,6 +21,7 @@ namespace XamarinReference.Droid
 		private Activity _context;
 		private IList<Job> _jobs;
 		private string _inProgressText, _inReviewText, _myTasksText, _toDoText;
+
 
 		public IList<Job> Jobs
 		{
@@ -71,7 +76,20 @@ namespace XamarinReference.Droid
 					MyTasksValue = view.FindViewById<TextView>(Resource.Id.textViewMyTasksValue),
 					ToDo = view.FindViewById<TextView>(Resource.Id.textViewToDo),
 					ToDoValue = view.FindViewById<TextView>(Resource.Id.textViewToDoValue),
+					Circle1 = view.FindViewById<View>(Resource.Id.circle1),
+					Circle2 = view.FindViewById<View>(Resource.Id.circle2),
+					Circle3 = view.FindViewById<View>(Resource.Id.circle3),
 				};
+
+
+
+				var radialViews = view.FindViewById<LinearLayout> (Resource.Id.linearLayoutRadialViews);
+				holder.percentPrepRadialView = new RadialProgressView (_context, 0, 100, RadialProgressViewStyle.Small);
+				holder.percentWorkRadialView = new RadialProgressView (_context, 0, 100, RadialProgressViewStyle.Small);
+				holder.percentDeliveryRadialView = new RadialProgressView (_context, 0, 100, RadialProgressViewStyle.Small);
+				radialViews.AddView (CreateRadialLayout(holder.percentPrepRadialView,_services.GetLocalizedString("PercentPrep")));
+				radialViews.AddView (CreateRadialLayout(holder.percentWorkRadialView,_services.GetLocalizedString("PercentWork")));
+				radialViews.AddView (CreateRadialLayout(holder.percentDeliveryRadialView,_services.GetLocalizedString("PercentDelivery")));
 				view.Tag = holder;
 			}
 			else
@@ -84,6 +102,11 @@ namespace XamarinReference.Droid
 			holder.CompanyName.Text = job.CompanyName;
 			holder.OfficeLocation.Text = job.OfficeLocation;
 			holder.JobName.Text = job.JobName;
+
+			holder.Circle1.Background = CreateCircle(job.NeedAction == 0 ? Color.Green : Color.Gray);
+			holder.Circle2.Background = CreateCircle(job.NeedAction == 1 ? Color.Yellow : Color.Gray);
+			holder.Circle3.Background = CreateCircle(job.NeedAction == 2 ? Color.Red : Color.Gray);
+
 			if (job.DueDate != null) {
 				holder.DueDate.Text = ((DateTime)job.DueDate).ToShortDateString();
 			}
@@ -95,7 +118,41 @@ namespace XamarinReference.Droid
 			holder.MyTasksValue.Text = job.TaskForReview.ToString();
 			holder.ToDo.Text = _toDoText;
 			holder.ToDoValue.Text = job.TaskToDo.ToString();
+			holder.percentPrepRadialView.Value = job.PercentPrep;
+			holder.percentWorkRadialView.Value = job.PercentWork;
+			holder.percentDeliveryRadialView.Value = job.PercentDelivery;
 			return view;
+		}
+
+		private LinearLayout CreateRadialLayout(RadialProgressView radialView, string text)
+		{
+			var individualLayout = new LinearLayout (_context){Orientation = Orientation.Vertical};
+			individualLayout.LayoutParameters = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WrapContent, ViewGroup.LayoutParams.WrapContent, 1);
+			individualLayout.SetGravity (GravityFlags.Center);
+
+			var labelValue = new TextView(_context);
+			labelValue.Text = text;
+			labelValue.SetPadding (0, 10, 0, 5);
+			labelValue.LayoutParameters = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WrapContent, ViewGroup.LayoutParams.WrapContent, 1);
+			individualLayout.AddView (labelValue);
+
+			radialView.LayoutParameters = new LinearLayout.LayoutParams(100, 100);
+			individualLayout.SetPadding (0, 0, 0, 10);
+			individualLayout.AddView (radialView);
+			return individualLayout;
+		}
+
+		private Drawable CreateCircle(Color color )
+		{
+			var paint = new Paint();
+			paint.Color = color;
+			paint.Alpha = 70;
+			paint.SetStyle(Paint.Style.Fill);
+			paint.StrokeWidth = 16;
+			var circle = new ShapeDrawable(new OvalShape());
+			circle.Paint.Set(paint);
+
+			return circle;
 		}
 
 		private class ViewHolder : Java.Lang.Object
@@ -112,6 +169,12 @@ namespace XamarinReference.Droid
 			public TextView MyTasksValue { get; set; }
 			public TextView ToDo { get; set; }
 			public TextView ToDoValue { get; set; }
+			public View Circle1 { get; set; }
+			public View Circle2 { get; set; }
+			public View Circle3 { get; set; }
+			public RadialProgressView percentPrepRadialView { get; set; }
+			public RadialProgressView percentWorkRadialView { get; set; }
+			public RadialProgressView percentDeliveryRadialView { get; set; }
 		}
 	}
 }

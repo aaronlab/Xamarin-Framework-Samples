@@ -105,6 +105,19 @@
                 android:orientation="horizontal"
                 android:minWidth="25px"
                 android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayoutRadialViews"
+                android:gravity="center"
+                android:layout_weight="1" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/linearLayout3"
@@ -127,6 +140,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/textViewInProgressValue"
+                        android:layout_margin="@dimen/padding_simple_half"
                         android:textColor="@android:color/holo_blue_dark" />
                 </LinearLayout>
                 <View
@@ -151,6 +165,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/textViewInReviewValue"
+                        android:layout_margin="@dimen/padding_simple_half"
                         android:textColor="@android:color/holo_blue_dark" />
                 </LinearLayout>
                 <View
@@ -175,6 +190,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/textViewMyTasksValue"
+                        android:layout_margin="@dimen/padding_simple_half"
                         android:textColor="@android:color/holo_blue_dark" />
                 </LinearLayout>
                 <View
@@ -199,6 +215,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/textViewToDoValue"
+                        android:layout_margin="@dimen/padding_simple_half"
                         android:textColor="@android:color/holo_blue_dark" />
                 </LinearLayout>
             </LinearLayout>
