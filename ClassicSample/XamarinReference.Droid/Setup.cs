@@ -15,6 +15,7 @@ using Cirrious.CrossCore.IoC;
 using XamarinReference.Lib.Interface;
 using XamarinReference.Droid.Services;
 using XamarinReference.Lib.Services;
+using XamarinReference.Droid.Network;
 
 namespace XamarinReference.Droid
 {
@@ -30,6 +31,8 @@ namespace XamarinReference.Droid
 			Mvx.LazyConstructAndRegisterSingleton<ILoggingService, FileLoggingService>();
 			Mvx.LazyConstructAndRegisterSingleton<IFileHelper, FileHelper>();
 			Mvx.LazyConstructAndRegisterSingleton<IJobsService, JobsService>();
+			Mvx.LazyConstructAndRegisterSingleton<IITunesDataService, ITunesDataService>();
+			Mvx.LazyConstructAndRegisterSingleton<ICreateHttpClientHelper, AndroidConnectionHandlerCreator>();
         }  
     }
 }

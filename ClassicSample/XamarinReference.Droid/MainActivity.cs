@@ -96,5 +96,18 @@ namespace XamarinReference.Droid
 
 			return base.OnOptionsItemSelected(item);
 		}
+
+		public void AddFragmentToStack(Fragment fragment, string title = null)
+		{
+			
+			FragmentManager.BeginTransaction()
+				.Replace(Resource.Id.frameLayout, fragment)
+				.AddToBackStack(title)
+				.CommitAllowingStateLoss();
+			
+			ActionBar.Title = title;
+//			DrawerToggle.SetHomeAsUpIndicator(Resource.Drawable.back);
+//			DrawerToggle.DrawerIndicatorEnabled = false;
+		}
     }
 }

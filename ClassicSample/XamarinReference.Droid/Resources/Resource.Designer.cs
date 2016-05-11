@@ -1979,13 +1979,25 @@ namespace XamarinReference.Droid
 			public const int design_snackbar_background = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int hamburger_menu_white = 2130837584;
+			public const int f001 = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int Icon = 2130837585;
+			public const int f008 = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int notification_template_icon_bg = 2130837586;
+			public const int f091 = 2130837586;
+			
+			// aapt resource value: 0x7f020053
+			public const int f145 = 2130837587;
+			
+			// aapt resource value: 0x7f020054
+			public const int hamburger_menu_white = 2130837588;
+			
+			// aapt resource value: 0x7f020055
+			public const int Icon = 2130837589;
+			
+			// aapt resource value: 0x7f020056
+			public const int notification_template_icon_bg = 2130837590;
 			
 			static Drawable()
 			{
@@ -2000,8 +2012,8 @@ namespace XamarinReference.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f090097
-			public const int action0 = 2131296407;
+			// aapt resource value: 0x7f090098
+			public const int action0 = 2131296408;
 			
 			// aapt resource value: 0x7f09005a
 			public const int action_bar = 2131296346;
@@ -2027,8 +2039,8 @@ namespace XamarinReference.Droid
 			// aapt resource value: 0x7f09005b
 			public const int action_context_bar = 2131296347;
 			
-			// aapt resource value: 0x7f09009b
-			public const int action_divider = 2131296411;
+			// aapt resource value: 0x7f09009c
+			public const int action_divider = 2131296412;
 			
 			// aapt resource value: 0x7f090004
 			public const int action_menu_divider = 2131296260;
@@ -2075,8 +2087,8 @@ namespace XamarinReference.Droid
 			// aapt resource value: 0x7f090090
 			public const int buttonViewLogFile = 2131296400;
 			
-			// aapt resource value: 0x7f090098
-			public const int cancel_action = 2131296408;
+			// aapt resource value: 0x7f090099
+			public const int cancel_action = 2131296409;
 			
 			// aapt resource value: 0x7f090014
 			public const int center = 2131296276;
@@ -2090,8 +2102,8 @@ namespace XamarinReference.Droid
 			// aapt resource value: 0x7f090052
 			public const int checkbox = 2131296338;
 			
-			// aapt resource value: 0x7f09009e
-			public const int chronometer = 2131296414;
+			// aapt resource value: 0x7f09009f
+			public const int chronometer = 2131296415;
 			
 			// aapt resource value: 0x7f090079
 			public const int circle1 = 2131296377;
@@ -2156,8 +2168,8 @@ namespace XamarinReference.Droid
 			// aapt resource value: 0x7f090017
 			public const int end = 2131296279;
 			
-			// aapt resource value: 0x7f0900a3
-			public const int end_padder = 2131296419;
+			// aapt resource value: 0x7f0900a4
+			public const int end_padder = 2131296420;
 			
 			// aapt resource value: 0x7f09000b
 			public const int enterAlways = 2131296267;
@@ -2207,8 +2219,8 @@ namespace XamarinReference.Droid
 			// aapt resource value: 0x7f09003f
 			public const int image = 2131296319;
 			
-			// aapt resource value: 0x7f0900a2
-			public const int info = 2131296418;
+			// aapt resource value: 0x7f0900a3
+			public const int info = 2131296419;
 			
 			// aapt resource value: 0x7f090001
 			public const int item_touch_helper_previous_elevation = 2131296257;
@@ -2216,11 +2228,11 @@ namespace XamarinReference.Droid
 			// aapt resource value: 0x7f090019
 			public const int left = 2131296281;
 			
-			// aapt resource value: 0x7f09009c
-			public const int line1 = 2131296412;
+			// aapt resource value: 0x7f09009d
+			public const int line1 = 2131296413;
 			
-			// aapt resource value: 0x7f0900a0
-			public const int line3 = 2131296416;
+			// aapt resource value: 0x7f0900a1
+			public const int line3 = 2131296417;
 			
 			// aapt resource value: 0x7f090069
 			public const int linearLayout1 = 2131296361;
@@ -2246,11 +2258,14 @@ namespace XamarinReference.Droid
 			// aapt resource value: 0x7f090072
 			public const int listViewBusinessCards = 2131296370;
 			
+			// aapt resource value: 0x7f090097
+			public const int listViewMovies = 2131296407;
+			
 			// aapt resource value: 0x7f090041
 			public const int list_item = 2131296321;
 			
-			// aapt resource value: 0x7f09009a
-			public const int media_actions = 2131296410;
+			// aapt resource value: 0x7f09009b
+			public const int media_actions = 2131296411;
 			
 			// aapt resource value: 0x7f090093
 			public const int menuRowTextView = 2131296403;
@@ -2264,17 +2279,17 @@ namespace XamarinReference.Droid
 			// aapt resource value: 0x7f09002e
 			public const int multiply = 2131296302;
 			
-			// aapt resource value: 0x7f0900a7
-			public const int nav_discussion = 2131296423;
+			// aapt resource value: 0x7f0900a9
+			public const int nav_discussion = 2131296425;
+			
+			// aapt resource value: 0x7f0900a8
+			public const int nav_friends = 2131296424;
 			
 			// aapt resource value: 0x7f0900a6
-			public const int nav_friends = 2131296422;
+			public const int nav_home = 2131296422;
 			
-			// aapt resource value: 0x7f0900a4
-			public const int nav_home = 2131296420;
-			
-			// aapt resource value: 0x7f0900a5
-			public const int nav_messages = 2131296421;
+			// aapt resource value: 0x7f0900a7
+			public const int nav_messages = 2131296423;
 			
 			// aapt resource value: 0x7f09008b
 			public const int navigation_header_container = 2131296395;
@@ -2402,20 +2417,23 @@ namespace XamarinReference.Droid
 			// aapt resource value: 0x7f09001b
 			public const int start = 2131296283;
 			
-			// aapt resource value: 0x7f090099
-			public const int status_bar_latest_event_content = 2131296409;
+			// aapt resource value: 0x7f09009a
+			public const int status_bar_latest_event_content = 2131296410;
 			
 			// aapt resource value: 0x7f090065
 			public const int submit_area = 2131296357;
 			
+			// aapt resource value: 0x7f0900a5
+			public const int tabFrameLayout = 2131296421;
+			
 			// aapt resource value: 0x7f090026
 			public const int tabMode = 2131296294;
 			
-			// aapt resource value: 0x7f0900a1
-			public const int text = 2131296417;
+			// aapt resource value: 0x7f0900a2
+			public const int text = 2131296418;
 			
-			// aapt resource value: 0x7f09009f
-			public const int text2 = 2131296415;
+			// aapt resource value: 0x7f0900a0
+			public const int text2 = 2131296416;
 			
 			// aapt resource value: 0x7f09004d
 			public const int textSpacerNoButtons = 2131296333;
@@ -2471,8 +2489,8 @@ namespace XamarinReference.Droid
 			// aapt resource value: 0x7f090086
 			public const int textViewToDoValue = 2131296390;
 			
-			// aapt resource value: 0x7f09009d
-			public const int time = 2131296413;
+			// aapt resource value: 0x7f09009e
+			public const int time = 2131296414;
 			
 			// aapt resource value: 0x7f090043
 			public const int title = 2131296323;
@@ -2693,61 +2711,67 @@ namespace XamarinReference.Droid
 			public const int Main = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int NetworkConnectivityFragmentLayout = 2130903087;
+			public const int MoviesLayout = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int notification_media_action = 2130903088;
+			public const int MusicVideosLayout = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int notification_media_cancel_action = 2130903089;
+			public const int NetworkConnectivityFragmentLayout = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int notification_template_big_media = 2130903090;
+			public const int notification_media_action = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int notification_template_big_media_narrow = 2130903091;
+			public const int notification_media_cancel_action = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int notification_template_lines = 2130903092;
+			public const int notification_template_big_media = 2130903092;
 			
 			// aapt resource value: 0x7f030035
-			public const int notification_template_media = 2130903093;
+			public const int notification_template_big_media_narrow = 2130903093;
 			
 			// aapt resource value: 0x7f030036
-			public const int notification_template_part_chronometer = 2130903094;
+			public const int notification_template_lines = 2130903094;
 			
 			// aapt resource value: 0x7f030037
-			public const int notification_template_part_time = 2130903095;
+			public const int notification_template_media = 2130903095;
 			
 			// aapt resource value: 0x7f030038
-			public const int PdfStitchingFragmentLayout = 2130903096;
+			public const int notification_template_part_chronometer = 2130903096;
 			
 			// aapt resource value: 0x7f030039
-			public const int PingFragmentLayout = 2130903097;
+			public const int notification_template_part_time = 2130903097;
 			
 			// aapt resource value: 0x7f03003a
-			public const int select_dialog_item_material = 2130903098;
+			public const int PdfStitchingFragmentLayout = 2130903098;
 			
 			// aapt resource value: 0x7f03003b
-			public const int select_dialog_multichoice_material = 2130903099;
+			public const int PingFragmentLayout = 2130903099;
 			
 			// aapt resource value: 0x7f03003c
-			public const int select_dialog_singlechoice_material = 2130903100;
+			public const int select_dialog_item_material = 2130903100;
 			
 			// aapt resource value: 0x7f03003d
-			public const int StickyHeaderFragmentLayout = 2130903101;
+			public const int select_dialog_multichoice_material = 2130903101;
 			
 			// aapt resource value: 0x7f03003e
-			public const int support_simple_spinner_dropdown_item = 2130903102;
+			public const int select_dialog_singlechoice_material = 2130903102;
 			
 			// aapt resource value: 0x7f03003f
-			public const int TabNavFragmentLayout = 2130903103;
+			public const int StickyHeaderFragmentLayout = 2130903103;
 			
 			// aapt resource value: 0x7f030040
-			public const int ThemeColorFragmentLayout = 2130903104;
+			public const int support_simple_spinner_dropdown_item = 2130903104;
 			
 			// aapt resource value: 0x7f030041
-			public const int ThemeFontFragmentLayout = 2130903105;
+			public const int TabNavFragmentLayout = 2130903105;
+			
+			// aapt resource value: 0x7f030042
+			public const int ThemeColorFragmentLayout = 2130903106;
+			
+			// aapt resource value: 0x7f030043
+			public const int ThemeFontFragmentLayout = 2130903107;
 			
 			static Layout()
 			{

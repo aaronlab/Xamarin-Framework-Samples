@@ -28,7 +28,7 @@ using XamarinReference.Lib.Interface;
 
 namespace XamarinReference.Droid.Network
 {
-    public class AndriodHttpClientHandler : ExtendedHttpClientHandler
+    public class AndroidHttpClientHandler : ExtendedHttpClientHandler
     {
     //    protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, System.Threading.CancellationToken cancellationToken)
     //    {
@@ -183,4 +183,12 @@ namespace XamarinReference.Droid.Network
     //        URI = uri;
     //    }
     }
+
+	public class AndroidConnectionHandlerCreator : ICreateHttpClientHelper
+	{
+		public HttpClientHandler CreateHandler()
+		{
+			return new AndroidHttpClientHandler();
+		}
+	}
 }
