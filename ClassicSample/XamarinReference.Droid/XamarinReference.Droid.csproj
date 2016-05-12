@@ -130,6 +130,8 @@
     <Compile Include="Adapters\GenreAdapter.cs" />
     <Compile Include="Adapters\MovieAdapter.cs" />
     <Compile Include="Network\AndroidHttpClientHandler.cs" />
+    <Compile Include="Adapters\MusicGenreAdapter.cs" />
+    <Compile Include="Fragments\MusicDetailsFragment.cs" />
     <Compile Include="Adapters\MusicAdapter.cs" />
   </ItemGroup>
   <ItemGroup>

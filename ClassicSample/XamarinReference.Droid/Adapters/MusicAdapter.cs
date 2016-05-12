@@ -1,16 +1,24 @@
 ﻿using System;
-using XamarinReference.Lib.Interface;
-using Cirrious.CrossCore;
-using Android.App;
-using Android.Views;
+using XamarinReference.Lib.Model;
 using Android.Widget;
+using Android.App;
+using System.Collections.Generic;
+using Cirrious.CrossCore;
+using XamarinReference.Lib.Interface;
+using Android.Views;
+using Android.Graphics.Drawables.Shapes;
+using Android.Graphics.Drawables;
+using RadialProgress;
+using System.Threading.Tasks;
+using XamarinReference.Droid.Fragments;
+using XamarinReference.Lib.Model.iTunes.Movies;
 
 namespace XamarinReference.Droid
 {
 	public class MusicAdapter : BaseAdapter<Lib.Model.iTunes.MusicVideos.Entry>
 	{
 		private Activity _context;
-		private readonly IITunesDataService _itunesService = Mvx.Resolve<IITunesDataService>();
+
 		private Lib.Model.iTunes.MusicVideos.MusicVideo _music;
 		public Lib.Model.iTunes.MusicVideos.MusicVideo Music
 		{
@@ -19,7 +27,7 @@ namespace XamarinReference.Droid
 
 		public override int Count
 		{
-			get { return _music == null ? 0 : _music.Feed.Entry.Count; }
+			get { return _music?.Feed?.Entry == null ? 0 : _music.Feed.Entry.Count; }
 		}
 
 		public MusicAdapter (Activity context, Lib.Model.iTunes.MusicVideos.MusicVideo music)
@@ -27,6 +35,7 @@ namespace XamarinReference.Droid
 			_context = context;
 			_music = music;
 		}
+
 
 		public override long GetItemId(int position)
 		{
@@ -54,7 +63,7 @@ namespace XamarinReference.Droid
 				holder = view.Tag as ViewHolder;
 			}
 
-			holder.Genre.Text = _music.Feed.Entry[position].ImName.Label;
+			holder.Genre.Text = _music.Feed.Entry[position].Title.Label;
 			return view;
 		}
 

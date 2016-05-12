@@ -39,7 +39,6 @@ namespace XamarinReference.Droid.Fragments
 				.Replace(Resource.Id.tabFrameLayout, new MovieDetailsFragment(genre, MovieDetailsFragment.MovieFragmentType.TopMovieRentals))
 				.AddToBackStack(genre)
 				.CommitAllowingStateLoss();
-			//Activity.ActionBar.Title = genre;
 		}
 	}
 }

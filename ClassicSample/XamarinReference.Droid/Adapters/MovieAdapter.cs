@@ -27,7 +27,7 @@ namespace XamarinReference.Droid
 
 		public override int Count
 		{
-			get { return _movies == null ? 0 : _movies.Feed.Entry.Count; }
+			get { return _movies?.Feed?.Entry == null ? 0 : _movies.Feed.Entry.Count; }
 		}
 
 		public MovieAdapter (Activity context, Movie movies)
