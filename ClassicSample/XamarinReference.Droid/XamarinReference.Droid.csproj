@@ -185,6 +185,7 @@
     <AndroidResource Include="Resources\drawable\f145.png" />
     <AndroidResource Include="Resources\layout\MusicVideosLayout.axml" />
     <AndroidResource Include="Resources\layout\MoviesLayout.axml" />
+    <AndroidResource Include="Resources\menu\CameraMenu.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Icon.png" />

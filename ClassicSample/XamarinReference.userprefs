@@ -1,52 +1,13 @@
 ﻿<Properties StartupItem="XamarinReference.Droid/XamarinReference.Droid.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (Marshmallow)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinReference.Droid/Adapters/MovieAdapter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinReference.Droid/Fragments/CameraFragment.cs">
     <Files>
-      <File FileName="XamarinReference.iOS/Controller/HomeViewController.cs" Line="30" Column="138" />
-      <File FileName="XamarinReference.iOS/Controller/TabController.cs" Line="94" Column="115" />
-      <File FileName="XamarinReference.Droid/Fragments/TabNavFragment.cs" Line="73" Column="1" />
-      <File FileName="XamarinReference.Droid/Fragments/MovieSalesFragment.cs" Line="21" Column="3" />
-      <File FileName="XamarinReference.iOS/Controller/TopMoviesController.cs" Line="28" Column="35" />
-      <File FileName="XamarinReference.Droid/Fragments/MovieRentalsFragment.cs" Line="41" Column="32" />
-      <File FileName="XamarinReference.iOS/Controller/TopMusicVideosController.cs" Line="70" Column="32" />
-      <File FileName="XamarinReference.Droid/Fragments/MusicVideosFragment.cs" Line="39" Column="72" />
-      <File FileName="XamarinReference.Droid/Fragments/MovieDetailsFragment.cs" Line="23" Column="1" />
-      <File FileName="XamarinReference.Droid/Fragments/MusicDetailsFragment.cs" Line="27" Column="50" />
-      <File FileName="XamarinReference.Droid/Adapters/MovieAdapter.cs" Line="25" Column="10" />
-      <File FileName="XamarinReference.Droid/Adapters/MusicAdapter.cs" Line="30" Column="17" />
+      <File FileName="XamarinReference.iOS/Controller/HomeViewController.cs" Line="1" Column="1" />
+      <File FileName="XamarinReference.Droid/Fragments/CameraFragment.cs" Line="78" Column="35" />
+      <File FileName="XamarinReference.iOS/Controller/CameraController.cs" Line="1" Column="1" />
+      <File FileName="XamarinReference.Droid/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="XamarinReference.Droid/Resources/menu/CameraMenu.xml" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="XamarinReference" expanded="True">
-            <Node name="XamarinReference.Droid" expanded="True">
-              <Node name="Adapters" expanded="True">
-                <Node name="MovieAdapter.cs" selected="True" />
-              </Node>
-              <Node name="Fragments" expanded="True" />
-              <Node name="Network" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="Resources" expanded="True">
-                <Node name="layout" expanded="True" />
-              </Node>
-              <Node name="Services" expanded="True" />
-            </Node>
-            <Node name="XamarinReference.iOS" expanded="True">
-              <Node name="Controller" expanded="True" />
-              <Node name="Controls" expanded="True">
-                <Node name="Cell" expanded="True" />
-              </Node>
-              <Node name="Network" expanded="True" />
-            </Node>
-            <Node name="XamarinReference.Lib" expanded="True">
-              <Node name="Interface" expanded="True" />
-              <Node name="Network" expanded="True" />
-              <Node name="Services" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
@@ -54,5 +15,4 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.XamarinReference.Droid AndroidDesignerPreferredDevice="Nexus 4" />
 </Properties>
